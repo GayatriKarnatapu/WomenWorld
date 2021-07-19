@@ -96,16 +96,21 @@
     <form>
         <div class="row">
 
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <a asp-action="DisplayPDF" asp-route-id="@Model.PersonID" target="_blank">PDF</a>
 
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <button class="btn btn-primary" asp-action="GoBack">Back to Home Page</button>
             </div>
-            <div class="col-md-4">
-                
+            <div class="col-md-3">
+
                 <a asp-action="WikipediaLink" asp-route-id="@Model.PersonID" target="_blank">Wikipedia</a>
+            </div>
+
+            <div class="col-md-3">
+
+                <a asp-action="JsonForm" asp-route-id="@Model.PersonID" target="_blank">JSON</a>
             </div>
         </div>
 

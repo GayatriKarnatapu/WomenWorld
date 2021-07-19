@@ -28,7 +28,7 @@ namespace WomenWorld.Models
 
        
 
-        public IEnumerable<Persons> GetAllEmployees()
+        public IEnumerable<Persons> GetAllPersons()
         {
             return _personsList;
         }

@@ -25,7 +25,7 @@ namespace WomenWorld.Controllers
 
         public ViewResult Index()
         {
-            var model = _personRepository.GetAllEmployees();
+            var model = _personRepository.GetAllPersons();
             return View(model);
         }
 
@@ -52,7 +52,13 @@ namespace WomenWorld.Controllers
             var pdfBytes = System.IO.File.ReadAllBytes(path);
             return new FileContentResult(pdfBytes, "application/pdf");
         }
-
+        [Route("Home/JsonForm/{id:int?}")]
+        public JsonResult JsonForm(int? id)
+        {
+            int current_id = id ?? 1;
+            var model = _personDetailsRepository.GetPersonDetails(current_id);
+            return Json(model);
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

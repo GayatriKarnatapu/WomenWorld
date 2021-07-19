@@ -7,6 +7,6 @@ namespace WomenWorld.Models
 {
     public interface IPersonRepository
     {
-        IEnumerable<Persons> GetAllEmployees();
+        IEnumerable<Persons> GetAllPersons();
     }
 }
