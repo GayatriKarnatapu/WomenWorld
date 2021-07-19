@@ -1,0 +1,112 @@
+﻿@model WomenWorld.Models.Persons
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+
+<h1>@Model.PersonName</h1>
+<div class="row">
+    <div class="col-md-12 mx-auto text-center">
+        <img src="@Url.Content(Model.PersonImage)" width="600" height="600" />
+    </div>
+</div>
+
+
+    @if (@Model.PersonID == 1)
+    {
+        <div>
+            Nicknamed ‘Dhing Express’, Hima Das is a 19-year-old Indian sprinter from the state of Assam. She became the first Indian woman — indeed the first ever Indian athlete — to win a gold medal in any format of a global track event at IAAF World U20 Championships when she clocked a speed of 51.46 seconds. Born on January 9, 2000, to rice farmers in Dhing village of Assam’s Nagaon district, Das won five back-to-back gold medals in about a month in Czech Republic in July 2019.<br />
+
+            Hima Das was interested in sports since childhood. She regularly played football with local boys in mud pits next to her parents’ rice fields and was convinced to take up professional athletics by a coach.<br />
+
+            Das mainly takes part in women’s 400-metre, 200-metre and 4x400-metre relays. At Asian Games in 2018, she won a silver medal in the 4×400-metre mixed relay. She also set an Indian U20 record of 51.32 seconds to finish sixth in the Commonwealth Games 400m final in Gold Coast in April 2018. In September 2018, Adidas signed an endorsement deal with Hima Das. She was also conferred with Arjuna Award by the President of India on September 25, 2018.<br />
+
+            Das passed her 12th examination from Assam Higher Secondary Education Council in May 2019. Recently, the Bannerghatta Biological Park named a tigress cub as 'Hima' to honour Indian athlete Hima Das.<br />
+
+            The list of Hima Das’ records in July 2019:<br /><br />
+
+            July 2, 2019: Hima Das bagged 200m gold in Poznan Athletics Grand Prix in Poland in 23.65 seconds.<br />
+            July 7, 2019: Hima Das won 200m gold at the Kutno Athletics Meet in Poland in 23.97 seconds.<br />
+            July 13, 2019: Das won 200m gold at the Kladno Athletics Meet in the Czech Republic in 23.43 seconds.<br />
+            July 17, 2019: Das won a gold medal in the 200m race at Tabor Athletics Meet Czech Republic in 23.25 seconds.<br />
+            July 20, 2019: Das won a gold medal in the 400-metre event in Nove Mesto, Czech Republic, in 52.09 seconds.<br />
+            The list of Hima Das’ records in 2018:<br /><br />
+
+            At Asian Games in 2018, Hima Das won a silver medal in the 4×400-metre mixed relay<br />
+            In July, 2018, Das won the 400 m final at the World U-20 Championships 2018 at Tampere in Finland by clocking 51.46 seconds<br />
+            She also set an Indian U20 record of 51.32 seconds to finish sixth in the Commonwealth Games 400m final in Gold Coast in April 2018<br />
+        </div>
+
+    }
+    else if (@Model.PersonID == 2)
+    {
+        <div>
+            Flying Officer Avani Chaturvedi has created history by becoming the first Indian woman fighter pilot to fly solo. Chaturvedi flew a MiG-21 Bison in her first training solo sortie, in Jamnagar, Gujarat.<br />
+
+            It is pertinent to mention here that MiG-21 Bison has the highest landing and take-off speed in the world - 340 kmph. She is from Rewa district in Madhya Pradesh. She was declared as the first combat pilot along with two of her cohorts, Mohana Singh, and Bhawana Kanth. The trio was inducted into the Indian Air Force fighter squadron on June 18, 2016. They were formally commissioned by then Defence Minister Manohar Parrikar. Mohana Singh and Bhawana have also completed training to fly a fighter plane and will soon fly fighter planes. All three were given training in January.<br />
+
+            In the IAF since 1993, women officers have been inducted in all branches and stream as Short Service Commissioned Officers except in the fighter stream. However, IAF has revised Short Service Commission scheme to induct women into the fighter stream on experimental basis for five years.<br />
+
+            The IAF has already selected the next batch of three women trainee pilots for the fighter stream.
+        </div>
+    }
+    else if (@Model.PersonID == 3)
+    {
+        <div>
+            Chungneijang Mary Kom Hmangte is an Indian Olympic boxer from Manipur.<br />
+            She is the only woman to achieve the coveted No. 1 position in the International Boxing Association (AIBA) after becoming the World Amateur Boxing champion for a six times record. Kom is also the only woman boxer to have won a medal in all seven world championships, making it a world record. <br />
+            Known as ‘Magnificent Mary,’ she has become India’s favourite sportsperson, shining at several International platforms.
+        </div>
+    }
+    else if (@Model.PersonID == 4)
+    {
+        <div>
+            Indra Nooyi is a business executive and former CEO of PepsiCo. She has consistently been ranked among the world’s 100 most powerful women. <br />
+            She also featured on the Fortune List in 2015 as the 2nd most powerful woman in the world. In 2018, Nooyi was named as one of the ‘Best CEOs in the World’ and has also been awarded the Padma Bhushan and the CNN-IBM Indian of the year- Global Indian award 2019. She serves as a board member of Amazon currently and is the 2nd woman to be part of the board at Amazon.
+        </div>
+    }
+
+    else if (@Model.PersonID == 5)
+    {
+        <div>
+            She became a beacon of light for women across the country when she was selected as the first woman to join the Indian Police Service.
+            <br />
+            Over the course of her illustrious career spanning 35 years, she was able to bring in numerous reforms, while being instrumental in mitigating the number of crimes against women. Not just a national sensation, Kiran Bedi also went on to achieve international acclaim, when she was appointed as a Police Advisor to the Secretary-General of the UN in 2003. After taking up voluntary resignation, she has continued to be a livewire in the public domain, being an audacious writer and dauntless social activist.
+
+        </div>
+    }
+    else if (@Model.PersonID == 6)
+    {
+        <div>
+            This pretty lady has achieved what no other Indian woman has, so far.<br />
+            Tearing down conventions, Seema Rao is the country’s first woman commando trainer.
+            Also qualified as a professional medical doctor, she possesses an MBA in crisis management.<br />
+            In partnership with her husband, Major Deepak Rao, she has trained over 15,000 soldiers in close quarter battle.<br />
+            To top it all, she is one of only 10 women in the world who are trained in Jeet Kune Do – a form of martial arts developed by Bruce Lee.<br />
+            Is there any surprise that she is known as India’s Wonder Woman?<br />
+
+        </div>
+    }
+
+<br/>
+<br/>
+<br/>
+    <form>
+        <div class="row">
+
+            <div class="col-md-4">
+                <a asp-action="DisplayPDF" asp-route-id="@Model.PersonID" target="_blank">PDF</a>
+
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary" asp-action="GoBack">Back to Home Page</button>
+            </div>
+            <div class="col-md-4">
+                
+                <a asp-action="WikipediaLink" asp-route-id="@Model.PersonID" target="_blank">Wikipedia</a>
+            </div>
+        </div>
+
+    </form>
